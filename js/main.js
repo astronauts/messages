@@ -3,7 +3,6 @@ var addNoteButton;
 var PARSE_APP = "FNajnmaH6ILsLhLRsH2Zg54eOZCrzw8vfwdIVNU5";
 var PARSE_JS = "6mQLcTnAFY1zERATCOS9Swsit3Yh5ak1QBHjrUld";
 var parse_init = false;
-var geoWatch;
 var geoPoint;
 var online;
 
@@ -81,7 +80,7 @@ function onDeviceReady(e) {
 
 function initParse() {
 	Parse.initialize(PARSE_APP, PARSE_JS);
-
+    alert("entro");
 	NoteObject = Parse.Object.extend("NoteObject");
 	parse_init=true;
 }
